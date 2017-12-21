@@ -13,6 +13,7 @@
 #define JKC_RBR KC_BSLS
 #define JKC_UNS KC_RO
 #define JKC_AT  KC_LBRC
+#define JKC_HAT KC_EQL
 
 enum custom_keycodes {
   PLACEHOLDER = SAFE_RANGE, // can always be here
@@ -33,7 +34,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |--------+------+------+------+------+------| Hyper|           | Meh  |------+------+------+------+------+--------|
  * | LShift |Z/Ctrl|   X  |   C  |   V  |   B  |      |           |      |   N  |   M  |   ,  |   .  |//Ctrl|   _    |
  * `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
- *   | LCtrl| LAlt | LGui | Left | Right|                                       |  Up  | Down |  Up  | Down | Right |
+ *   | LCtrl| LAlt | LGui | Left | Right|                                       |  Up  | Down |  Up  | Down |  ^    |
  *   `----------------------------------'                                       `----------------------------------'
  *                                        ,-------------.       ,-------------.
  *                                        | App  | LGui |       | Alt  |Ctrl/Esc|
@@ -60,7 +61,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
              TG(SYMB),    KC_Y,   KC_U,  KC_I,   KC_O,   KC_P,             JKC_RBR,
                           KC_H,   KC_J,  KC_K,   KC_L,   LT(MDIA, KC_SCLN),JKC_CLN,
              MEH_T(KC_NO),KC_N,   KC_M,  KC_COMM,KC_DOT, CTL_T(KC_SLSH),   JKC_UNS,
-                                  KC_UP, KC_DOWN,KC_UP,  KC_DOWN,          KC_RGHT,
+                                  KC_UP, KC_DOWN,KC_UP,  KC_DOWN,          JKC_HAT,
              KC_LALT,        CTL_T(KC_ESC),
              KC_PGUP,
              KC_PGDN,KC_ENT, KC_SPC
