@@ -26,12 +26,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 /* Keymap 0: Basic layer
  *
  * ,--------------------------------------------------.           ,--------------------------------------------------.
- * |   @    |   1  |   2  |   3  |   4  |   5  |  ¥   |           |  -   |   6  |   7  |   8  |   9  |   0  |   [    |
+ * |   @    |   1  |   2  |   3  |   4  |   5  |  ¥   |           | Meh  |   6  |   7  |   8  |   9  |   0  |   [    |
  * |--------+------+------+------+------+-------------|           |------+------+------+------+------+------+--------|
  * | Del    |   Q  |   W  |   E  |   R  |   T  | Alf  |           |  L1  |   Y  |   U  |   I  |   O  |   P  |   ]    |
  * |--------+------+------+------+------+------| red  |           |      |------+------+------+------+------+--------|
  * | Tab    |   A  |   S  |   D  |   F  |   G  |------|           |------|   H  |   J  |   K  |   L  |; / L2|   :    |
- * |--------+------+------+------+------+------| Hyper|           | Meh  |------+------+------+------+------+--------|
+ * |--------+------+------+------+------+------| Hyper|           |  -   |------+------+------+------+------+--------|
  * | LShift |Z/Ctrl|   X  |   C  |   V  |   B  |      |           |      |   N  |   M  |   ,  |   .  |//Ctrl|   _    |
  * `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
  *   | LCtrl| LAlt | LGui | Left | Right|                                       |  Up  | Down |  Up  | Down |  ^    |
@@ -57,10 +57,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                                               KC_HOME,
                                                KC_BSPC,KC_BSPC,KC_LANG1,
         // right hand
-             KC_MINS,     KC_6,   KC_7,  KC_8,   KC_9,   KC_0,             JKC_LBR,
+             MEH_T(KC_NO),KC_6,   KC_7,  KC_8,   KC_9,   KC_0,             JKC_LBR,
              TG(SYMB),    KC_Y,   KC_U,  KC_I,   KC_O,   KC_P,             JKC_RBR,
                           KC_H,   KC_J,  KC_K,   KC_L,   LT(MDIA, KC_SCLN),JKC_CLN,
-             MEH_T(KC_NO),KC_N,   KC_M,  KC_COMM,KC_DOT, CTL_T(KC_SLSH),   JKC_UNS,
+             KC_MINS,     KC_N,   KC_M,  KC_COMM,KC_DOT, CTL_T(KC_SLSH),   JKC_UNS,
                                   KC_UP, KC_DOWN,KC_UP,  KC_DOWN,          JKC_HAT,
              KC_LALT,        CTL_T(KC_ESC),
              KC_PGUP,
