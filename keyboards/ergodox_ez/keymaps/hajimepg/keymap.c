@@ -32,9 +32,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |--------+------+------+------+------+------| red  |           |      |------+------+------+------+------+--------|
  * | Del    |   A  |   S  |   D  |   F  |   G  |------|           |------|   H  |   J  |   K  |   L  |; / L2|   :    |
  * |--------+------+------+------+------+------| Hyper|           |  -   |------+------+------+------+------+--------|
- * | LShift |Z/Ctrl|   X  |   C  |   V  |   B  |      |           |      |   N  |   M  |   ,  |   .  |//Ctrl|   _    |
+ * | LShift |Z/Ctrl|   X  |   C  |   V  |   B  |      |           |      |   N  |   M  |   ,  |   .  |  Up  |   _    |
  * `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
- *   | LCtrl| LAlt | LGui | Left | Right|                                       |  Up  | Down |  Up  | Down |  ^    |
+ *   | LCtrl| LAlt | LGui | Left | Right|                                       |   /  |   ^  | Left | Down | Right|
  *   `----------------------------------'                                       `----------------------------------'
  *                                        ,-------------.       ,-------------.
  *                                        | App  | LGui |       | Alt  |Ctrl/Esc|
@@ -60,8 +60,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
              MEH_T(KC_NO),KC_6,   KC_7,  KC_8,   KC_9,   KC_0,             JKC_LBR,
              TG(SYMB),    KC_Y,   KC_U,  KC_I,   KC_O,   KC_P,             JKC_RBR,
                           KC_H,   KC_J,  KC_K,   KC_L,   LT(MDIA, KC_SCLN),JKC_CLN,
-             KC_MINS,     KC_N,   KC_M,  KC_COMM,KC_DOT, CTL_T(KC_SLSH),   JKC_UNS,
-                                  KC_UP, KC_DOWN,KC_UP,  KC_DOWN,          JKC_HAT,
+             KC_MINS,     KC_N,   KC_M,  KC_COMM,KC_DOT, KC_UP,   JKC_UNS,
+                                  KC_SLSH,JKC_HAT,KC_LEFT,KC_DOWN,KC_RGHT,
              KC_LALT,        CTL_T(KC_ESC),
              KC_PGUP,
              KC_LANG2,KC_ENT, KC_SPC
