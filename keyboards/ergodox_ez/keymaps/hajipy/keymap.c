@@ -245,3 +245,11 @@ uint32_t layer_state_set_user(uint32_t state) {
 
   return state;
 };
+
+#ifdef RGB_MATRIX_ENABLE
+void rgb_matrix_indicators_user(void) {
+  for (int i = 0; i < DRIVER_LED_TOTAL; i++) {
+    rgb_matrix_set_color(i, 0x00, 0x00, 0xFF);
+  }
+}
+#endif
