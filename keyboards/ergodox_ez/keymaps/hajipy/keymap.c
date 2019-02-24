@@ -38,7 +38,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *                                 ,------|------|------|       |------+--------+------.
  *                                 |      |      | Home |       | PgUp |        |      |
  *                                 |Backsp|Backsp|------|       |------| Enter  |Space |
- *                                 |ace   |ace   | Kana |       | Eng  |        |      |
+ *                                 |ace   |ace   | Eng  |       | Kana  |        |      |
  *                                 `--------------------'       `----------------------'
  */
 // If it accepts an argument (i.e, is a function), it doesn't need KC_.
@@ -52,7 +52,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_LCTRL,       KC_LALT,      KC_LGUI,        KC_ENT, KC_SPC,
                                                     MO(FN),   KC_LGUI,
                                                               KC_HOME,
-                                               KC_BSPC,KC_BSPC,KC_LANG1,
+                                               KC_BSPC,KC_BSPC,KC_LANG2,
         // right hand
              MEH_T(KC_NO),KC_6,   KC_7,   KC_8,   KC_9,   KC_0,             JKC_LBR,
              TG(FN),      KC_Y,   KC_U,   KC_I,   KC_O,   KC_P,             JKC_RBR,
@@ -61,7 +61,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                   KC_SLSH,JKC_HAT,KC_LEFT,KC_DOWN,KC_RGHT,
              KC_ESC, MO(FN),
              KC_PGUP,
-             KC_LANG2,KC_ENT, KC_SPC
+             KC_LANG1,KC_ENT, KC_SPC
     ),
 /* Keymap 1: Function Layer
  *
